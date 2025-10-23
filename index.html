@@ -1,0 +1,108 @@
+<!-- Boilerplate stuff and head tag -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta tags for characters, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDiagnostics - Your Vehicle Diagnostics Hub</title>
+
+    <!-- Google Fonts and stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main title and subtitle -->
+    <header>
+        <h1>Auto Diagnostics</h1>
+        <p>Your trusted resource for vehicle diagnostics and repair</p>
+    </header>
+
+    <!-- Sticky navigation bar -->
+    <nav id="navbar">
+        <a href="#about">About</a>
+        <a href="#guides">Guides</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About section  -->
+    <section id="about">
+        <div class="container">
+            <h2>About AutoDiagnostics</h2>
+            <p>AutoDiagnostics is a leading online resource dedicated to helping car owners and mechanics diagnose and repair vehicle issues. Our team of experts provides clear, concise guides and tool recommendations to tackle any automotive challenge.</p>
+        </div>
+    </section>
+
+    <!-- Section for diagnostic guides, populated with cards -->
+    <section id="guides">
+        <div class="container">
+            <h2>Diagnostic Guides</h2>
+            <div class="dynamic-section" id="guides-section">
+
+                <!-- Individual cards for different topics -->
+                <div class="card">
+                    Check Engine Light Codes
+                    <div class="card-details">Understand and troubleshoot common OBD-II codes.</div>
+                </div>
+                <div class="card">
+                    Brake System Diagnostics
+                    <div class="card-details">Learn to identify and fix issues with your vehicle's brakes.</div>
+                </div>
+                <div class="card">
+                    Electrical System Troubleshooting
+                    <div class="card-details">Diagnose battery, alternator, and starter problems.</div>
+                </div>
+                <div class="card">
+                    Engine Performance
+                    <div class="card-details">Solve issues like misfires, rough idling, and poor fuel economy.</div>
+                </div>
+                <div class="card">
+                    Transmission Faults
+                    <div class="card-details">Identify symptoms of transmission problems before they become serious.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for recommended tools, populated by JavaScript -->
+    <section id="tools">
+        <div class="container">
+            <h2>Recommended Tools</h2>
+            <div class="dynamic-section" id="tools-section">
+
+                <!-- Tool cards inserted here by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section with a web form -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Have a specific question or need help? Reach out to our community of experts.</p>
+            <!-- Form submits to a Web3Forms -->
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="d892668b-3152-4cb8-9db1-d23e7bdff4e2">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Question" required></textarea>
+                <button type="submit">Submit</button>
+                <!-- Status message for form submission -->
+                <p id="form-status"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2024 AutoDiagnostics. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
